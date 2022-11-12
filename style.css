@@ -1,0 +1,94 @@
+*{
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box;
+}
+
+.left{
+    background-color: #0984e3;
+    height: 100vh;
+    width: 50%;
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    flex-direction: column;
+}
+.logo{
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo h2{
+    font-size: 45px !important;
+    font-weight: 700 !important;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form input{
+    width: 433px;
+    border: none;
+    outline: none;
+    background-color: #ecf0f1;
+    height: 40px;
+    border-radius: 12px;
+    font-size: 17px;
+    padding-left: 10px !important;
+}
+.oneinput{
+    margin-top: 60px !important;
+}
+.twoin{
+    margin-top: 20px !important;
+}
+.btnn{
+    padding: 3px 38px !important;
+    border-radius: 12px;
+    margin-top: 21px !important;
+}
+.error{
+    font-size: 18px;
+    margin-top: 32px !important;
+    margin-bottom: -27px !important;
+    color: red;
+    font-weight: 700;
+}
+.spin{
+    display: none;
+    margin-top: 15px !important;
+}
+@media screen and (max-width: 768px) {
+    .left{
+        width: 30%;
+    }
+    .right{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .left{
+        width: 20%;
+    }
+    .right{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 425px) {
+    .left{
+        display: none;
+    }
+    .right{
+        width: 100%;
+    }
+    .form input{
+        width: 80% !important;
+    }
+    .form{
+        width: 100%;
+    }
+}
